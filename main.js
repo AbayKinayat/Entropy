@@ -83,119 +83,37 @@ $('.section-four__question-box').click(function(){
 	$('.accardion-arrow-righthalf').not($(this).children('.accardion-arrow').children('.accardion-arrow-righthalf')).removeClass('accardion-arrow-righthalf_active');
 });
 
-         // Аккардион Вопрос/Ответ в popup
-$('.popup__question-box').click(function(){
-	$(this).toggleClass('in').next().slideToggle();
-	$('.popup__question-box').not(this).removeClass('in').next().slideUp();
-	
-	$(this).children('.popup__question-close').toggleClass('popup__question-close_active');
-	$('.popup__question-close').not($(this).children('.popup__question-close')).removeClass('popup__question-close_active');
-});
-
         // Модальное окно при нажатии на block подробнее
         
 $(document).ready(function($) {
-    $('.block-popup__open').click(function() {
-		$('.popup-fade').fadeIn();
-		return false;
-    });	
-
-    $('.fear-popup__open').click(function() {
-		$('.popup-fade').fadeIn();
-		return false;
-    });
-
-    $('.traum-popup__open').click(function() {
-		$('.popup-fade').fadeIn();
-		return false;
-	});
 
 	$('.form-popup__open').click(function() {
 		$('.popup-fade').fadeIn();
 		return false;
-    });
-    
-    $('.block-popup__open').click(function() {
-		$('.popup').slideToggle();
-    });
-    
-    $('.fear-popup__open').click(function() {
-		$('.fear-popup').slideToggle();
-    });
-    
-    $('.traum-popup__open').click(function() {
-		$('.traum-popup').slideToggle();
-	});
+  });
 
 	$('.form-popup__open').click(function() {
 		$('.form-popup').slideToggle();
-	});
-
-	$('.form-popup__open').click(function() {
-		$('.popup').fadeOut();
-	});
-
-	$('.form-popup__open').click(function() {
-		$('.fear-popup').fadeOut();
-	});
-
-	$('.form-popup__open').click(function() {
-		$('.traum-popup').fadeOut();
 	});
 
 	// Клик по ссылке "Закрыть".
 	$('.popup__close').click(function() {
 		$('.popup-fade').fadeOut();
 		return false;
-	});        
- 
-    $('.popup__close').click(function() {
-		$(this).parents('.popup').slideUp();
-		return false;
-	});     
-
-    $('.popup__close').click(function() {
-		$(this).parents('.fear-popup').slideUp();
-		return false;
-    }); 
-    
-    $('.popup__close').click(function() {
-		$(this).parents('.traum-popup').slideUp();
-		return false;
-	}); 
+	});
 
 	$('.popup__close').click(function() {
 		$(this).parents('.form-popup').slideUp();
 		return false;
 	}); 
+
 	// Закрытие по клавише Esc.
 	$(document).keydown(function(e) {
 		if (e.keyCode === 27) {
 			e.stopPropagation();
 			$('.popup-fade').fadeOut();
 		}
-    });
-    
-    $(document).keydown(function(e) {
-		if (e.keyCode === 27) {
-			e.stopPropagation();
-			$('.popup').slideUp();
-		}
-    });
-    
-    $(document).keydown(function(e) {
-		if (e.keyCode === 27) {
-			e.stopPropagation();
-			$('.fear-popup').slideUp();
-		}
-    });
-    
-    $(document).keydown(function(e) {
-		if (e.keyCode === 27) {
-			e.stopPropagation();
-			$('.traum-popup').slideUp();
-		}
-	});
+  });
 
 	$(document).keydown(function(e) {
 		if (e.keyCode === 27) {
@@ -207,10 +125,7 @@ $(document).ready(function($) {
 	// Клик по фону, но не по окну.
 	$('.popup-fade').click(function(e) {
 		if ($(e.target).closest('.popup').length == 0) {
-            $(this).fadeOut();
-            $('.popup').slideUp();
-            $('.fear-popup').slideUp();	
-			$('.traum-popup').slideUp();
+      $(this).fadeOut();
 			$('.form-popup').slideUp();
 		}
     });	

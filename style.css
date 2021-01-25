@@ -1464,116 +1464,7 @@ section {
 
     background-color: #fff;
     padding: 0 65px;
-    padding-top: 23px;
-    
-}
-
-.fear-popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    height: max-content;
-    z-index: 99999;
-
-    background-color: #fff;
-    padding: 0 65px;
-    padding-top: 23px;
-    padding-bottom: 30px;
-}
-
-.traum-popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    height: max-content;
-    z-index: 99999;
-
-    background-color: #fff;
-    padding: 0 65px;
-    padding-top: 23px;
-    padding-bottom: 30px;
-}
-
-.popup__title {
-    font-weight: 500;
-    font-size: 1.5em;
-
-    text-align: center;
-}
-
-.popup__subtitle {
-    font-weight: 500;
-    font-size: 1.1em;
-    line-height: 150%;
-
-    margin-top: 15px;
-}
-
-.popup__accardion {
-    margin: 20px 0;
-}
-
-.popup__question-box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 400px;
-    height: 38px;
-    color: #fff;
-    background-color: #3A114E;
-    transition: 0.5s;
-    cursor: pointer;
-
-    margin-top: 5px;
-    padding: 0 9px;
-}
-
-.popup__question {
-    font-weight: 500;
-    font-size: 16px;
-    cursor: pointer;
-    
-}
-
-.popup__question-close {
-    font-size: 40px;
-    transition: 0.5s;
-    transform: rotate(0deg);
-}
-
-.popup__question-close_active {
-    transform: rotate(-45deg);
-}
-
-.block-popup__list {
-    padding-left: 20px;
-}
-
-.popup__answer-box {
-    display: none;
-    max-width: 400px;
-
-    border-left: 1px solid #3A114E;
-    padding: 10px;
-}
-
-.popup__answer {
-    font-weight: 500;
-    font-size: 15px;  
-}
-
-.block-popup__image {
-    position: absolute;
-    right: -25%;
-    top: 55%;
-    transform: translateY(-50%);
-    filter: drop-shadow(10px 13px 20px rgba(9, 39, 67, 0.5));
+    padding-top: 23px;  
 }
 
 .popup__close {
@@ -1598,20 +1489,6 @@ section {
 
 .popup__close-ball:hover {
     background: firebrick;
-}
-
-.fear-popup__image {
-    width: 300px;
-    height: auto;
-    position: absolute;
-    right: -27%;
-    top: 55%;
-    transform: translateY(-50%);
-    filter: drop-shadow(10px 13px 20px rgba(36, 36, 36, 0.5));
-}
-
-.traum-popup__link {
-    margin-top: 10px;
 }
 
 .in {
@@ -1687,20 +1564,6 @@ section {
         .section-six__content {
             width: 100%;
         }
-
-        .fear-popup {
-            width: 50%;
-
-            padding: 20px;
-        }
-
-        .fear-popup__image {
-            display: none;
-        }
-
-        .traum-popup {
-            width: 50%;
-        }
     }
 
     @media screen and (max-width: 1187px) {
@@ -1724,8 +1587,7 @@ section {
         }
     }
 
-    @media screen and (max-width: 1060px) {
-        
+    @media screen and (max-width: 1060px) { 
 
         .section-title {
             position: relative;
@@ -1929,16 +1791,6 @@ section {
             max-width: 364px;
         }
 
-        .fear-popup {
-            width: 364px;
-            max-width: 364px
-        }
-
-        .traum-popup {
-            width: 364px;
-            max-width: 364px
-        }
-
         @media screen and (max-height: 812px) {
         .section-eight__text {
             margin: 0;
@@ -2049,10 +1901,6 @@ section {
 
         .section-eight__text {
             font-size: 1.1em;
-        }
-
-        .popup__subtitle {
-            font-size: 1.3em;
         }
     }
 
@@ -2267,14 +2115,6 @@ section {
         .section-eight__text {
             font-size: 1.2em;
         }
-
-        .popup__title {
-            font-size: 1.6em;
-        }
-
-        .popup__subtitle {
-            font-size: 1.4em;
-        }
     }
 
     @media screen and (max-width: 490px) {
@@ -2323,6 +2163,14 @@ section {
             height: 180px;
         }
 
+        .item-title {
+            font-size: 20px;
+        }
+
+        .item-text {
+            font-size: 16px;
+        }
+
         .section-four__subtitle {
             font-size: 1.6em;
         }
@@ -2349,14 +2197,6 @@ section {
         
         .section-eight__right-box {
             display: none;
-        }
-
-        .popup__title {
-            font-size: 1.7em;
-        }
-
-        .popup__subtitle {
-            font-size: 1.6em;
         }
     }
 
