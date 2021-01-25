@@ -193,7 +193,13 @@ body::-webkit-scrollbar-thumb:hover {
     padding: 0 15px;
 }
 
+.header__dark {
+    display: none;
+}
+
 .header__inner {
+    position: relative;
+    z-index: 100;
     max-width: 1170px;
     height: 100%;
 
@@ -1654,6 +1660,20 @@ section {
 
         .traum-popup {
             width: 50%;
+        }
+    }
+
+    @media screen and (max-width: 1187px) {
+        .header {
+            background-image: url(images/header/Adil-bg.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+
+        .header__dark{
+            display: block;
         }
     }
 
