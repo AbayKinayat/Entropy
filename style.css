@@ -98,7 +98,7 @@ body::-webkit-scrollbar-thumb:hover {
 .burger-menu__nav {
     padding-top: 80px;
     position: fixed;
-    z-index: 20;
+    z-index: 200;
     display: flex;
     flex-flow: column;
     align-items: center;
